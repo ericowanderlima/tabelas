@@ -4,36 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criando mesclagens na tabela</title>
+
+    <style>
+        table{
+            width: 300px;
+            border: 3px solid black;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        caption{
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+        td, th{
+            border: 1px solid black;
+        }
+
+        thead th{
+            padding: 15px;
+            background-color: darkolivegreen;
+            color: white;
+        }
+
+        td{
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+
 </head>
-<body>
-    <caption>Mesclando celulas da tabela</caption>
+<body> 
     <table>
+        <caption>Mesclando celulas da tabela</caption>
         <thead>
             <tr>
-                <th>Alfabeto</th>
+                <th colspan="3">Alfabeto</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <td>A</td>
-                <td>B</td>
-                <td>C</td>
+                <td rowspan="3">A</td>
+                <td colspan="2">B</td>
+                
             </tr>
             <tr>
-                <td>D</td>
+                
                 <td>E</td>
                 <td>F</td>
             </tr>
             <tr>
-                <td>G</td>
+                
                 <td>I</td>
                 <td>J</td>
             </tr>
         </tbody>
 
         <tfoot>
-            <th>Fim de tabela 😎</th>
+            <th colspan="3">Fim de tabela 😎</th>
         </tfoot>
     </table>
 </body>
