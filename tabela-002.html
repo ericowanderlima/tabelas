@@ -4,34 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criando tabela grande</title>
+
+    <style>
+        table{
+            width: 500px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+        }    
+    </style>
 </head>
 <body>
     
     <h1>Criando uma tabela com semântica</h1>
 
-    <thead>
-        <tr>
-            <td>Estados</td>
-            <td>População (2022)</td>
-        </tr>
-    </thead>
-        
-    <tbody>
-        <tr>
-            <td>Acre 
-                Amapá
-                Amazonas
-                Pará
-            </td>
-            <td>17.349.619</td>
-        </tr>
-    </tbody>
+        <table>
+            <thead>
+                <tr>
+                    <th>Estados</th>
+                    <th>População (2022)</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Norte</td>
+                    <td>Acre <br>
+                        Amapá <br>
+                        Amazonas <br>
+                        Pará <br>
+                        Rondonia <br>
+                        Roraima <br>
+                        Tocantins
+                    </td>
+                    <td>17.349.619</td>
+                </tr>
 
-    <tfoot>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </tfoot>
+                <tr>
+                    <td>Nordeste</td>
+                    <td>
+                        Alagoas <br>
+                        Bahia <br>
+                        Ceará <br>
+                        Maranhão <br>
+                        Paraíba <br>
+                        Pernambuco <br>
+                        Piauí <br>
+                        Rio Grande do Norte <br>
+                        Sergipe
+                    </td>
+                    <td>54.644.582</td>
+                </tr>
+
+                <tr>
+                    <td>Centro-Oeste</td>
+                    <td>
+                        Distrito-Federal <br>
+                        Goiás <br>
+                        Mato-Grosso <br>
+                        Mato-Grosso do Sul 
+                    </td>
+                    <td>16.287.809</td>
+                </tr>
+
+                <tr>
+                    <td>Sudeste</td>
+                    <td>
+                        Espirito Santo <br>
+                        Minas Gerais <br>
+                        Rio de Janeiro <br>
+                        São Paulo
+                    </td>
+                    <td>84.847.187</td>
+                </tr>
+
+                <tr>
+                    <td>Sul</td>
+                    <td>
+                        Paraná <br>
+                        Santa Catarina <br>
+                        Rio Grande do Sul
+                    </td>
+                    <td>29.933.315</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total da poulação no brasil</td>
+                    <td>203.062.512</td>
+                </tr>
+            </tfoot>
+        </table>
 </body>
 </html>
