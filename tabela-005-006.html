@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando o colgroup</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1{
+            background-color: bisque;
+        }
+
+        table{
+            width: 500px;
+            margin: auto;
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+
+        th,td{
+            border: 1px solid black;
+            width: 100px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .amarelo{
+            background-color: yellow;
+        }
+
+        .vermelho{
+            background-color: red;
+        }
+
+        .cantainer{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a usaro colgroup em tabelas.</h1>
+
+    <div class="container">
+
+        <table>
+            <colgroup>
+                <col class="amarelo">
+                <col class="vermelho" span="2">
+                <col class="amarelo">
+            </colgroup>
+
+            <caption>Cadastro</caption>
+
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sexo</th>
+                    <th>Idade</th>
+                    <th>Profissão</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Ana Maria</td>
+                    <td>F</td>
+                    <td>25</td>
+                    <td>Jornalista</td>
+                </tr>
+                <tr>
+                    <td>Claudio</td>
+                    <td>M</td>
+                    <td>28</td>
+                    <td>Programador</td>
+                </tr>
+                <tr>
+                    <td>Gustavo</td>
+                    <td>M</td>
+                    <td>42</td>
+                    <td>Professor</td>
+                </tr>
+                <tr>
+                    <td>Sonia</td>
+                    <td>F</td>
+                    <td>30</td>
+                    <td>médica</td>
+                </tr>
+                <tr>
+                    <td>Bruno</td>
+                    <td>M</td>
+                    <td>32</td>
+                    <td>Pintor</td>
+                </tr>
+                <tr>
+                    <td>Julia</td>
+                    <td>F</td>
+                    <td>26</td>
+                    <td>Engenheira civil</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
